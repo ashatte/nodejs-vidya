@@ -1,0 +1,28 @@
+doctype
+html
+	head
+		title= "node.js video stream"
+		script(src='/chat.js')
+		script(src='/socket.io/socket.io.js')
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+	body
+		.controls
+			h2(style='margin-left:7px')
+				| node.js video stream
+			#videowindow(style='float:left; width: 650px; margin: 5px 5px 5px 5px;')
+				#video(style='width: 650px;')
+					video#player(width='650px', preload='auto')
+						source(src='/vid/your video.txt', type='video/mp4')
+				input#play(type='button', value='play')
+			#chat(style='float: left; width: 200px')
+				#content(style='width: 200px; height: 300px; margin: 5px 0 5px 0; border: solid 1px #999; overflow-y: scroll;')
+				| Name: 
+				input#name(style='width:150px;')
+				br
+				| Msg: 
+				input#field(style='width:150px; margin-left: 10px')
+				input#send(type='button', value='send', style='margin-left:80px')
+			br
+			br
+			br
+			br
