@@ -17,3 +17,5 @@ You will first need to install the package dependencies (socket.io, express, jad
 Then run the index.js file:
 
     node index.js
+
+The demo can be accessed on localhost:3700
