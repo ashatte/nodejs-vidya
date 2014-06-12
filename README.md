@@ -4,6 +4,8 @@ Small node.js application using sockets that allows multiple users on a network 
 
 Future features will include tracking support (global sync of video time skipping) and dynamic file listing (read all videos in a directory and list them).
 
+![Screenshot of node-vidya](http://adrianshatte.com/img/nodevidya.png)
+
 ## Motivation
 
 Inspired by the YouTube plugin for Google Hangouts, I built this to watch weekly episodes of a TV show (file hosted on my end) at the same time as a remote friend. Also includes chat ability.  
@@ -14,4 +16,4 @@ You will first need to install the package dependencies (socket.io, express, jad
 
 Then run the index.js file:
 
-  node index.js
+    node index.js
